@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>IDUNNO</title>
+
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="logic.js"></script>
+        <script src="ElementManipulation.js"></script>
+
+        <link rel="stylesheet" href="https://bootswatch.com/journal/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://bootswatch.com/journal/bootstrap.css" crossorigin="anonymous">
+    </head>
+
+    <body>
+            <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                      <!-- Brand and toggle get grouped for better mobile display -->
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">IDUNNO</a>
+                      </div>                     
+                    <div class="navbar-button">
+                        <ul class="nav navbar-nav">     
+                                <li><a href="#">Random</a></li>
+                        </ul>
+                    </div>
+
+                    <form class="navbar-form navbar-right" id="searchbar" >
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>  
+                    </form>
+            </nav>
+            
+          <div class="container col-md-12" align="center">
+            <ul id='movies'class="list-unstyled"></ul>
+          </div>
+          
+          <div class="container col-md-12" align="center"> 
+              <ul id='pages'class="list-unstyled list-inline"></ul>
+          </div>
+
+    </body>
+</html>
